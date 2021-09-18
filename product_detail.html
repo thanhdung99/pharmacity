@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <script src="https://kit.fontawesome.com/f3b1dc75d8.js" crossOrigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        if (!crossOriginIsolated) SharedArrayBuffer = ArrayBuffer
+    </script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/mark_indIcator_product_list.js"></script>
+    
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/carousel.css" />
+    <link rel="stylesheet" href="./styles/product_detail.css" />
+    <link rel="stylesheet" href="./styles/slideshow.css" />
+    <link rel="stylesheet" href="./styles/homepage.css"/>
+
+</head>
+
+<body>
+
+    <header>
+        <section class="top-bar mt-0">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-3">
+                        <img src="./public/logo2.png" alt="" class="top-bar__logo"></img>
+                    </div>
+                    <div class="col-5 px-0 mx-0 py-3" >
+                        <div class="top-bar__filter">
+                            <input type="text" placeholder="Tìm kiếm sản phẩm" name="search">
+                            <select name="category" id="category" placeholder="Phân loại sản phẩm">
+                                <option value="device">Thiết bị y tế</option>
+                                <option value="all">Phân loại sản phẩm</option>
+                                <option value="medicine">Thuốc</option>
+                            </select>
+                            <button type="submit"><i class="fa fa-search fa-lg"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-1 py-3">
+                        <ul class="top-bar__menu-icon">
+                            <li><a href="#"> <img src="./public/heart.png" alt=""> </i></a></li>
+                            <li><a href="#"><img src="./public/cart.png" alt=""></i></a></li>
+                            <li><a href="#"><img src="./public/user.png" alt=""></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2 py-3">
+                        <div class="top-bar__my_account">
+                            My Account
+                            </br>
+                            <a href="#">Đăng nhập</a>
+                            <span>/</span>
+                            <a href="#">Đăng ký</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="top-nav mt-1 mb-3">
+            <div class="container ">
+                <div class="row justify-content-between ">
+                    <div class="col-lg-12">
+                        <div class="top-nav__menu-list row border-top border-bottom">
+                            <div class="top-nav__menu-icon ">
+                                <a href="#"><img src="./public/dashboard.png" alt=""></a>
+                            </div>
+                            <div class="top-nav__products-dropdown-list">
+                                <select name="category" id="category" placeholder="Danh Mục Sản Phẩm">
+                                    <option value="all">Danh Mục Sản Phẩm</option>
+                                    <option value="">ĐƯỢC PHẨM</option>
+                                    <option value="">THIỆT BỊ Y TẾ</option>
+                                    <option value="">MỸ PHẨM</option>
+                                    <option value="">DỤNG CỤ Y TẾ</option>
+                                    <option value="">TP CHỨC NĂNG</option>
+                                    <option value="">TP CHO TRẺ EM</option>
+                                </select>
+                            </div>
+                            <a href="#">Trang chủ</a>
+                            <a href="#">Hoạt chất</a>
+                            <a href="#">Tìm hiểu bệnh</a>
+                            <a href="#">Về chúng tôi</a>
+                            <a href="#">Tin tức</a>
+                            <a href="#">Đặt hàng nhanh</a>
+                            <a href="./contact.html">Liên hệ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="row route_address my-4">
+                <a href="">Trang chủ</a>
+                &nbsp;>&nbsp;<a href="">Danh Mục Sản Phẩm</a>
+                &nbsp;>&nbsp;<a href="">Dược phẩm</a>
+                &nbsp;>&nbsp;<a href="">Thuốc xyz</a>
+            </div>            
+        </div>
+    </section>
+    <section class="other-products">
+        <div class="container">
+            <div class="row mb-4 ">
+                <p style="font-size: 24px;">Sản phẩm khác</p>
+            </div>
+            <div class="row mb-4 pb-4 border-bottom">
+                <div class="col-12">
+                    <div id="products-list-1" class="carousel slide pt-0 products-list" data-ride="carousel">
+                        <ol class="carousel-indicators d-flex justify-content-around w-100" id="products-list-1" style='display: none !important; '>
+                            <nav class="w-100">
+                                <div id="marker-1" class="marker"><img src="./public/marker.png" alt=""
+                                        style="width:80%; height:auto; margin:0; align-self: center;"></div>
+                                <a data-target="#products-list-1 " id="products-list-1" data-slide-to="0"
+                                    style="width: 21%; display: inline-block;">Danh sách thiết bị 1</a>
+                                <a data-target="#products-list-1 " id="products-list-1" data-slide-to="1"
+                                    style="width: 21%; display: inline-block;">Danh sách thiết bị 2</a>
+                                <a data-target="#products-list-1 " id="products-list-1" data-slide-to="2"
+                                    style="width: 21%; display: inline-block;">Danh sách thiết bị 3</a>
+                                <a data-target="#products-list-1 " id="products-list-1" data-slide-to="3"
+                                    style="width: 21%; display: inline-block;">Danh sách thiết bị 4</a>
+                            </nav>
+                        </ol>
+                        <div class="carousel-inner pb-2 px-4 ">
+                            <div class="carousel-item active">
+                                <div class="row px-4 mt-4 d-flex justify-content-center"> 
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product1.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy đo tai
+                                                </div>
+                                                <div class="row" >
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0"  >
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button"> <p>i</p> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product2.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy nghe nhịp tim
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product3.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy nghe nhịp tim
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;"> 
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product4.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy do sô 2
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product4.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy do sô 2
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row px-4 mt-4 d-flex justify-content-center"> 
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product1.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy đo tai
+                                                </div>
+                                                <div class="row" >
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0"  >
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button"> <p>i</p> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product2.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy nghe nhịp tim
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product3.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy nghe nhịp tim
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;"> 
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product4.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy do sô 2
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product4.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy do sô 2
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row px-4 mt-4 d-flex justify-content-center"> 
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product1.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy đo tai
+                                                </div>
+                                                <div class="row" >
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0"  >
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button"> <p>i</p> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product2.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy nghe nhịp tim
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product3.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy nghe nhịp tim
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;"> 
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product4.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy do sô 2
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product4.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy do sô 2
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row px-4 mt-4 d-flex justify-content-center"> 
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product1.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy đo tai
+                                                </div>
+                                                <div class="row" >
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0"  >
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button"> <p>i</p> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product2.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy nghe nhịp tim
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product3.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy nghe nhịp tim
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;"> 
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product4.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy do sô 2
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-0 mx-2" style="width: 18%;">
+                                        <div class="shadow bg-white product-img" style="align-items:  center;">
+                                            <img src="./public/product4.png" alt="">
+                                            <div class="description ">
+                                                <div class="row name px-0" style="border-bottom: 1px solid #C5C5C58C;">
+                                                    Máy do sô 2
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10 px-0">
+                                                        <div class="rating mt-0">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star.png" alt="">
+                                                            <img src="./public/star2.png" alt="">
+                                                        </div>
+                                                        <div class="price">
+                                                            500.000 VNĐ
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 px-0">
+                                                        <div class="infomation">
+                                                            <div class="info-button">
+                                                                <p>i</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev col-1" id="products-list-1" role="button" data-slide="prev" onclick="prevIndicator(0)">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next col-1" id="products-list-1" role="button" data-slide="next" onclick="nextIndicator(0)">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class='promos'>
+        <div class="container pr-1">
+            <div class="row mb-4 pb-2">
+                <p style="font-size: 20px;">Khuyến Mãi Trong Tháng</p>
+            </div>
+            <div class="row promos__box px-0 mb-4">
+                <div class="col-3 pl-4 pr-0 ">
+                    <div class="pl-0" style="font-size: 22px; font-weight: 600; display: inline;">
+                         Khuyến Mãi Khủng Lên Đến Hơn <span style="color:red"> 45% !!!</span>
+                    </div>
+                    <div class="row pl-3">
+                        <p>Sự kiện sẽ kết thúc trong:</p>
+                        <div class="row">
+                            <div class="col-2 mr-2">
+                                <div class="countdown_timer">6</div>
+                                <p>DAYS</p>
+                            </div>
+                            <div class="col-2 mr-2">
+                                <div class="countdown_timer">9</div>
+                                <p>HOURS</p>
+                            </div>
+                            <div class="col-2 mr-2">
+                                <div class="countdown_timer">4</div>
+                                <p>MINS</p>
+                            </div>
+                            <div class="col-2 mr-2">
+                                <div class="countdown_timer">20</div>
+                                <p>SECS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-3 readmore">
+                        <button>KHÁM PHÁ THÊM</button>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="carousel slide" id="Carousel">
+                        <div class="carousel-inner"  style="overflow-x: hidden;"> 
+                            <div class="carousel-item active" >
+                                <div class="row px-4">
+                                    <div class="col-md-3">
+                                        <div class="onsale-items">
+                                            <span><p>SALE</p></span>
+                                            <img src="./public/item.png" alt="">
+                                        </div>
+                                        <div class="pl-2 name" style="font-size:16px ;">
+                                            Morphine
+                                        </div>
+                                        <div class="row rating mt-3 pl-4">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                        </div>
+                                        <div class="price pl-2" sy>
+                                            <p>500.000</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="onsale-items">
+                                            <span><p>SALE</p></span>
+                                            <img src="./public/item.png" alt="">
+                                        </div>
+                                        <div class="pl-2 name" style="font-size:16px ;">
+                                            Morphine
+                                        </div>
+                                        <div class="row rating mt-3 pl-4">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                        </div>
+                                        <div class="price pl-2" sy>
+                                            <p>500.000</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="onsale-items">
+                                            <span><p>SALE</p></span>
+                                            <img src="./public/item.png" alt="">
+                                        </div>
+                                        <div class="pl-2 name" style="font-size:16px ;">
+                                            Morphine
+                                        </div>
+                                        <div class="row rating mt-3 pl-4">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                        </div>
+                                        <div class="price pl-2" sy>
+                                            <p>500.000</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="onsale-items">
+                                            <span><p>SALE</p></span>
+                                            <img src="./public/item.png" alt="">
+                                        </div>
+                                        <div class="pl-2 name" style="font-size:16px ;">
+                                            Morphine
+                                        </div>
+                                        <div class="row rating mt-3 pl-4">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                        </div>
+                                        <div class="price pl-2" sy>
+                                            <p>500.000</p>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                
+                            </div>                            
+                            <div class="carousel-item ">
+                                <div class="row px-4">
+                                    <div class="col-md-3">
+                                        <div class="onsale-items">
+                                            <span>
+                                                <p>SALE</p>
+                                            </span>
+                                            <img src="./public/item.png" alt="">
+                                        </div>
+                                        <div class="pl-2 name" style="font-size:16px ;">
+                                            Morphine
+                                        </div>
+                                        <div class="row rating mt-3 pl-4">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                        </div>
+                                        <div class="price pl-2" sy>
+                                            <p>500.000</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="onsale-items">
+                                            <span>
+                                                <p>SALE</p>
+                                            </span>
+                                            <img src="./public/item.png" alt="">
+                                        </div>
+                                        <div class="pl-2 name" style="font-size:16px ;">
+                                            Morphine
+                                        </div>
+                                        <div class="row rating mt-3 pl-4">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                        </div>
+                                        <div class="price pl-2" sy>
+                                            <p>500.000</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="onsale-items">
+                                            <span>
+                                                <p>SALE</p>
+                                            </span>
+                                            <img src="./public/item.png" alt="">
+                                        </div>
+                                        <div class="pl-2 name" style="font-size:16px ;">
+                                            Morphine
+                                        </div>
+                                        <div class="row rating mt-3 pl-4">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                        </div>
+                                        <div class="price pl-2" sy>
+                                            <p>500.000</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="onsale-items">
+                                            <span>
+                                                <p>SALE</p>
+                                            </span>
+                                            <img src="./public/item.png" alt="">
+                                        </div>
+                                        <div class="pl-2 name" style="font-size:16px ;">
+                                            Morphine
+                                        </div>
+                                        <div class="row rating mt-3 pl-4">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                            <img src="./public/star.png" alt="">
+                                        </div>
+                                        <div class="price pl-2" sy>
+                                            <p>500.000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>                            
+                        </div>
+                        
+                        <a class="carousel-control-prev col-1" href="#Carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>                       
+                        <a class="carousel-control-next col-1" href="#Carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>    
+                        
+                    </div>
+                </div>
+            </div>
+            
+    </section>
+
+    <section class="register-form">
+        <div class="container-fluid" style="background-color: #42549A;">
+            <div class="container">
+                <div class="row py-3">
+                    <div class=" pr-3" style="color: #fff; font-size:16px; border-right: 1px solid #ffffff;">
+                        <p>
+                            ĐĂNG KÝ ĐỂ NHẬN NGAY NHỮNG ƯU ĐÃI VÀ THÔNG TIN MỚI NHẤT TỪ CHÚNG TÔI
+                        </p>
+                    </div>
+                    <div class="email-input ml-3 px-0 py-0" style="width:470px">
+                        <input type="text" placeholder="Email Address                                                                                        " 
+                        class="px-3">
+                        <button>
+                            ĐĂNG KÝ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="app-footer">
+            <div class="container-fluid py-4" style="background: url(./public/mask_group.png)">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-3 content_box">
+                            <a href="#" class="app-footer_logo">
+                                <img src="./public/logo.png" alt=""/>
+                                <img src="./public/logo_text.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="col content_box" >
+                            <p class="title"> Thông tin liên lạc</p>
+                            <p> 0909 669 420 </p>
+                            <p>Thuocchosi@gmail.com</p>
+                            <a href="#">Về chúng tôi</a>
+                            <p>Công Ty TNHH Thương Mại XYZ</p>
+                            <p>Địa chỉ: 48 Nguyễn Văn Quá, phường 3, Quận Gò Vấp, Tp HCM.</p>
+                        </div>
+                        <div class="col content_box">
+                            <p class="title"> Chính sách bảo mật</p>
+                            <a href="#">FAQS</a>
+                            <a href="#">Chính sách sử dụng</a>
+                            <a href="#">Chính sách giao hàng</a>
+                            <a href="#">Chính sách hoàn trả</a>
+                            <a href="#">Chính sách bảo mật</a>
+                            <a href="#">Chính sách người dùng</a>
+                            <a href="#">Theo dỏi đơn hàng</a>
+                        </div>
+                        <div class="col content_box" style="margin-right: 0;">
+                            <p class="title"> Phương thức thanh toán </p>
+                            <div class="row inline-row">
+                                <img class="payment-method-box" src="./public/visa.png"></img>
+                                <img class="payment-method-box" src="./public/mastercard.png"></img>
+                            </div>
+                            <div class="row">
+                                <img class="payment-method-box" src="./public/visa.png"></img>
+                                <img class="payment-method-box" src="./public/mastercard.png"></img>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>        
+    </footer>
+</body>
+
+</html>

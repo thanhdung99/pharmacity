@@ -1,0 +1,78 @@
+.route_address{
+    font-size: 18px;
+    font-weight: 300;
+}
+.divider{
+    border: 0;
+    border-bottom: 1px solid rgba(72, 72, 72, 0.3);
+}
+
+.carousel-indicators nav .marker{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 21%;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+    transition: 0.5s;
+ }
+.carousel-indicators li {
+	background: #cecece;
+}
+.carousel-indicators{
+    position: relative;
+    top :0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: inline;
+    width: 100%;
+}
+form label{
+    font-size: 17px;
+    font-weight: 400;
+}
+.submit-btn button{
+    background-color: #42549A;
+    color: #ffffff;
+    font-size: 20px;
+    width: 162px;
+    height: 44px;
+    border-radius: 19px;
+}
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    border-radius: 16px;
+}
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.contact-info nav{
+    position: relative;
+    top :0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: inline;
+    width: 100%;
+}
+.contact-info nav .marker{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 230px;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+    transition: 0.5s;
+ }

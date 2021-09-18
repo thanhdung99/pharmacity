@@ -1,0 +1,134 @@
+
+.top-bar{
+    background-color: #ffffff;
+    vertical-align: text-bottom;
+    margin-top: 1rem;
+}
+
+.top-bar__filter{
+    flex-flow: row nowrap;
+    background-color: #42549A;
+
+    border-radius: 37px;
+    border-style: solid;
+    border-color: #42549A;
+    border-width: 3px;
+    
+
+    overflow: hidden;
+    height: 44px;
+}
+.top-bar__filter > input{
+    border: none;
+    padding-left: 5px;
+
+    width: 250px;
+    height :100%;
+
+    font-size:16px;
+
+    outline: none;
+}
+
+.top-bar__filter > select{
+    background-color: #ffffff;
+
+    margin-left: -10px;
+    padding: 10px 0 10px 0;
+    border: none;
+    border-left:  2px solid grey;
+    outline: none;
+    
+    font-size:16px;
+
+    height: 100%;
+    width: 170px;
+}
+
+.top-bar__filter > button{
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+
+    align-items: center;
+    width: 50px;
+    flex-direction: column;
+}
+
+.top-bar__menu-icon {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    vertical-align: middle;
+
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.top-bar__menu-icon > li{
+    margin-top: 0.5rem;
+    margin-right: 20px;
+}
+
+
+.top-bar__my_account{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 22px;
+    
+    height: 100%;
+}
+.top-bar__my_account > a{
+    font-weight: 500;
+}
+
+.top-nav__menu-icon {
+
+    object-fit: cover;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+
+    width: 50px;
+    height: 50px;
+}
+.top-nav__menu-icon > a{
+    padding: 0;
+    margin: 0;
+}
+.top-nav__menu-icon > a > img{
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav__menu-list{
+    flex-flow: row nowrap;
+}
+.top-nav__menu-list > a{
+    display: inline-block;
+    margin: 5px;
+    padding: 0.5rem 0;
+}
+
+.top-nav__menu-icon > a:hover{
+    outline: none;
+}
+.top-nav__products-dropdown-list{
+    background-color: #42549A;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    margin: 0;
+    text-align:center;
+    
+    font-size:22px;
+    width: 250px;
+    height: 50px;
+}
+.top-nav__products-dropdown-list > select {
+    background-color:transparent;
+    border:none;
+    outline: none;
+    color: #ffffff;
+}

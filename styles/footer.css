@@ -1,0 +1,55 @@
+/** @format */
+
+.email-input {
+	border-radius: 100px;
+	height: 50px;
+	border: 2px solid #ffffff;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+.email-input button {
+	background-color: transparent;
+	font-weight: 700;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	color: #42549a;
+	width: 100px;
+	height: 50px;
+}
+.email-input input {
+	background-color: #42549a;
+	color: #ffffff;
+	height: 55px;
+	border: none;
+	outline: none;
+	width: 350px;
+}
+.email-input input::-webkit-input-placeholder {
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: #ffffff;
+}
+.content_box {
+	margin: 0;
+	padding: 0;
+}
+.content_box > a,
+p {
+	margin: 10px 0;
+	display: block;
+	flex-flow: row nowrap;
+}
+.payment-method-box {
+	width: 85px;
+	height: 58px;
+	border-radius: 4px;
+	margin: 10px;
+	object-fit: cover;
+}
+.title {
+	display: inline-block;
+	font-size: 20px;
+}

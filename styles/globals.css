@@ -1,0 +1,22 @@
+html,
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.border-bottom{
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(270deg, rgba(66, 84, 154, 0.2) 0%, rgba(66, 84, 154, 0.8) 50%, rgba(66, 84, 154, 0.2) 100%);
+    border-image-slice: 1
+}
+
+.border-top{
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(270deg, rgba(66, 84, 154, 0.2) 0%, rgba(66, 84, 154, 0.8) 50%, rgba(66, 84, 154, 0.2) 100%);
+    border-image-slice: 1
+}

@@ -1,0 +1,192 @@
+.features-bar__menu-icon{
+    flex-flow: row nowrap;
+}
+.menu-image img{
+    width: 50px;
+    width: 50px;
+    vertical-align: middle;
+    object-fit: contain;
+}
+.features-bar__menu-icon .description{
+    padding: 0;
+}
+.features-bar__menu-icon .description .title{
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1px;
+}
+.features-bar__menu-icon .description .content{
+    font-weight: 300;
+    font-size: 14px;
+    line-height:1px;
+}
+
+
+.fact-box{
+    margin: 10px 0;
+    padding: .25rem;
+    justify-content: center;
+    text-align: center; 
+}
+.fact-box strong{
+    font-size: 30px;
+    font-weight: 600;
+}
+.fact-box p{
+    font-size: 24px;
+    font-weight: 400;
+}
+.promos__box{
+    height: 360px;
+    border:  2.5px solid #42549A;
+    flex-flow: row nowrap;
+    border-radius: 19px;
+    padding-top: 34px;
+}
+.countdown_timer{
+    width: 41px;
+    height:41px;
+    background-color: #42549A;
+    color: #ffffff;
+    font-size:20px;
+    text-align:center;
+    padding: 5px;
+
+}
+.readmore button{
+    background-color: #42549A;
+    color: #ffffff;
+    font-size:20px;
+    width: 177px;
+    height:44px;
+    border-radius: 19px;
+}
+.arrow{
+    position: relative;
+}
+.arrow span{
+    position: absolute;
+    top: 50%;
+}
+.onsale-items{
+    height: 170px;
+    position: relative;
+}
+.onsale-items span{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #42549A;
+    color: #ffffff;
+    top: 0;
+    left: 0;
+}
+.onsale-items span p{
+    top: 50%;
+    text-align: center;
+}
+.onsale-items img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.comment-container{
+    position: relative;
+}
+.comment-container img{
+    max-width: 100%;
+    height: auto;
+}
+.comment-container .comment{
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    overflow: hidden;
+    font-size:18px;
+    line-height:25px;
+}
+.comment-container .avatar{
+    overflow: hidden;
+    border-radius:50%
+}
+.category-img{
+    border-radius:19px;
+    height: 320px;
+    position: relative;
+}
+.category-img img{
+    bottom: 35%;
+    position: absolute;
+    width: 100%;
+}
+.category-img p{
+    text-align: center;
+    font-size:18px;
+    bottom: 20px;
+    width: 100%;
+    position: absolute;
+}
+
+.product-img {
+    border-radius:19px;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+.product-img img{
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
+    max-height: 190px;
+}
+
+.description{ 
+    text-align: left;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.description .name{
+    margin-top: 3.5rem;
+    margin-bottom: auto;
+}
+.rating{
+    position: relative;
+    display: inline-block;
+}
+.rating img{
+    width: auto;
+    margin-top: 0.5rem;
+    min-width: 0;
+    height:19px ;
+}
+.price{
+    font-size: 16px;
+    font-weight: 600;
+    color: #42549A;
+}
+.info-button{
+    text-align: center;
+    font-size:26px;
+    background-color:#DADADA99;;
+    color:  #484848A6;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+}
+
+
+.info-button:hover{
+    background-color: #42549A;
+    color: #fff;
+}
+
+

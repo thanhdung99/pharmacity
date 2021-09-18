@@ -1,0 +1,75 @@
+
+/* The indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+	background: #cecece;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("../public/left.png") !important;
+    width: 41px !important; 
+    height: 41px !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("../public/left.png") !important;
+    transform: rotate(180deg);
+    width: 41px !important; 
+    height: 41px !important;
+}
+
+.carousel-control-prev{
+    margin-left: -25px;
+}
+.carousel-control-next{
+    margin-right: -25px;
+}
+
+
+/* smoother transitions */
+.carousel-inner>.carousel-item.next.left,
+.carousel-inner>.carousel-item.prev.right
+{
+    transition: all 1s ease;
+}
+.products-list{
+    text-align: center;
+}
+.products-list .carousel-indicators{
+    position: relative;
+    top :0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: inline;
+    width: 100%;
+    align-self: center;
+}
+.products-list .carousel-indicators nav {
+    position: relative;
+}
+.products-list .carousel-indicators nav a{
+    text-indent:0;
+    display:inline;
+    margin: .5rem;
+    width: 500px;
+    border:none;
+    background-color: transparent;
+}
+.products-list .carousel-indicators nav .marker{
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 21%;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+    transition: 0.5s;
+ }

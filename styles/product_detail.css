@@ -1,0 +1,60 @@
+.route_address{
+    font-size: 18px;
+    font-weight: 300;
+}
+.promos__box{
+    height: 360px;
+    border:  2.5px solid #42549A;
+    flex-flow: row nowrap;
+    border-radius: 19px;
+    padding-top: 34px;
+}
+.countdown_timer{
+    width: 41px;
+    height:41px;
+    background-color: #42549A;
+    color: #ffffff;
+    font-size:20px;
+    text-align:center;
+    padding: 5px;
+
+}
+.readmore button{
+    background-color: #42549A;
+    color: #ffffff;
+    font-size:20px;
+    width: 177px;
+    height:44px;
+    border-radius: 19px;
+}
+.arrow{
+    position: relative;
+}
+.arrow span{
+    position: absolute;
+    top: 50%;
+}
+.onsale-items{
+    height: 170px;
+    position: relative;
+}
+.onsale-items span{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #42549A;
+    color: #ffffff;
+    top: 0;
+    left: 0;
+}
+.onsale-items span p{
+    top: 50%;
+    text-align: center;
+}
+.onsale-items img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
