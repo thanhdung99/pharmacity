@@ -1,0 +1,94 @@
+.table_head{
+    font-size: 16px;
+    font-weight: 600;
+}
+.table_head div{
+    padding-left:0 ;
+    color: #42549A ;
+}
+.table_row div{
+    padding-left:0 ;
+}
+.table_row div:last-child{
+    padding-right: 0;
+}
+.table_row div select.select-form, input[id="product_name"]{
+    appearance: none;
+    padding-right: 50px;
+    padding-left: 15px;
+    width: 100%;
+    height: 41px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    outline: none;
+    border-radius:8px;
+    background: url("../public/chevron-down.png") no-repeat right 15px center, 
+    url("../public/divider.png") no-repeat right 45px center;
+}
+
+.table_row div input::-webkit-calendar-picker-indicator{
+    display: none;
+}
+
+.table_row div .amount{
+    width: 100%;
+    height: 41px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius:8px;
+    outline: none;
+    overflow: hidden;
+}
+button.sub,button.add{
+    cursor: pointer;
+    margin: 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0 0;
+    
+    height: 41px;
+    width: 25%;
+    position: relative;
+}
+button.sub{
+    padding-left:5px;
+}
+
+.table_row div .amount input{
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+    outline: none;
+    text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.table_row div input[id="price"]{
+    width: 100%;
+    height: 41px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    outline: none;
+    border-radius:8px;
+    padding-left: 15px;
+}
+button{
+    padding: 10px 15px;
+    background-color: #42549A;
+    color: #ffffff;
+    border-radius: 8px;
+
+}
+.order-details thead tr th{
+    background-color: #42549A;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size:16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.summary{
+    border-bottom: 2px solid #42549A;
+    border-top: 2px solid #42549A;
+}

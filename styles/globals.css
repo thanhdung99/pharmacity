@@ -12,11 +12,23 @@ a {
 .border-bottom{
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(270deg, rgba(66, 84, 154, 0.2) 0%, rgba(66, 84, 154, 0.8) 50%, rgba(66, 84, 154, 0.2) 100%);
-    border-image-slice: 1
+    border-image-slice: 1;
 }
 
 .border-top{
     border-top: 2px solid transparent;
     border-image: linear-gradient(270deg, rgba(66, 84, 154, 0.2) 0%, rgba(66, 84, 154, 0.8) 50%, rgba(66, 84, 154, 0.2) 100%);
-    border-image-slice: 1
+    border-image-slice: 1;
+}
+
+.border-bottom-secondary{
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(270deg, #A5A5A533, #A5A5A599, #A5A5A533);
+    border-image-slice: 1;
+}
+
+.border-top-secondary{
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(270deg, #A5A5A533, #A5A5A599, #A5A5A533);
+    border-image-slice: 1;
 }
